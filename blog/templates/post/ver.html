@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block titulo %} {{ pub.titulo|truncatechars:30 }}Moto Cross{% endblock  %}
+
+{% block cuerpo %}
+    
+        <h1>{{ publicacion.titulo }}</h1>
+        <p align="justify">
+        <p> {{ publicacion.contenido }} </p>
+        {{ publicacion.autor.get_full_name }} publicado: {{ publicacion.f_pub}}
+<a href="carpeta/web.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS5Kkh5C-UhrVybX0nXVfzQcx9e0kA-nHNFUA&usqp=CAU"></a> 
+<nav>
+         <div class="nav-wrapper blue darken-4">
+        
+          <a href="#" data-target="menu-chico" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+       
+          <ul id="nav-mobile" class="rigth hide-on-med-and-down">
+            <li><a href="">Motos</a></li>
+            <li><a href="">Carreras</a></li>
+            <li><a href="">motociclistas</a></li>
+            <li><a href="">equipacion de motos</a></li>
+            <li><a href="">autopistas</a></li>
+          </ul>
+        </div>
+</nav>
+
+<div>
+ <a href="https://www.addtoany.com/share#url=http%3A%2F%2F127.0.0.1%3A8000%2F&amp;title=" target="_blank"><img src="https://static.addtoany.com/buttons/a2a.svg" width="32" height="32" style="background-color:royalblue"></a> 
+ <a href="https://www.addtoany.com/add_to/facebook?linkurl=http%3A%2F%2F127.0.0.1%3A8000%2F&amp;linkname=" target="_blank"><img src="https://static.addtoany.com/buttons/facebook.svg" width="32" height="32" style="background-color:royalblue"></a> 
+ <a href="https://www.addtoany.com/add_to/twitter?linkurl=http%3A%2F%2F127.0.0.1%3A8000%2F&amp;linkname=" target="_blank"><img src="https://static.addtoany.com/buttons/twitter.svg" width="32" height="32" style="background-color:royalblue"></a> 
+ <a href="https://www.addtoany.com/add_to/email?linkurl=http%3A%2F%2F127.0.0.1%3A8000%2F&amp;linkname=" target="_blank"><img src="https://static.addtoany.com/buttons/email.svg" width="32" height="32" style="background-color:royalblue"></a> 
+ </div>
+<!-- addtoany END -->
+
+      {% endblock %}
