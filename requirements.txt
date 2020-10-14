@@ -1,0 +1,4 @@
+Django==2.1
+freeze==3.0
+pytz==2020.1
+six==1.15.0
